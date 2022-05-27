@@ -1,0 +1,101 @@
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<style>
+*{
+  margin: 0;
+  padding:0;
+  font-family: Verdana;
+}
+header{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Loc.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+ul{
+  float: right;
+  list-style-type: none;
+}
+ul li{
+  display: inline-block;
+}
+ul li a{
+  text-decoration: none;
+  color:#fff;
+  padding: 10px 25px;
+  border: 1px solid #fff transparent;
+}
+ul li a:hover{
+      background-color: #fff;
+      color: #000;
+}
+ul li.active a{
+  background-color: #fff;
+      color: #000;
+} 
+.logo img{
+  float: left;
+  width: 150px;
+  height: auto;
+}
+.main{
+  max-width:1200px;
+  margin:auto;
+}
+.title{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.title{
+  color: #fff;
+  font-size: 30px;
+}
+.button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid #fff;
+    padding:10px 30px;
+    color:#fff;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: #fff;
+    color:#000;
+}
+</style>
+</head>
+<body style="background-color:#000">
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="download.png">
+
+            </div>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Photo.html">Gallery</a></li>
+                <li  class="active"><a href="Location.html">Location Map</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="title">
+          <h1>Location</h1>
+        </div>
+        <div class="button">
+            <a href="https://www.google.com/maps/@16.3994753,120.5887752,13z" class="btn">Baguio Location</a>
+            <a href="Photo.html" class="btn">Tourist destinations</a>
+        </div>
+    </header>
+    
+
+</body>
+</html>

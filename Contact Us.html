@@ -1,0 +1,221 @@
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title>Home Page</title>
+
+<style>
+*{
+  margin: 0;
+  padding:0;
+  font-family: Verdana;
+}
+
+ul{
+  float: right;
+  list-style-type: none;
+}
+ul li{
+  display: inline-block;
+}
+ul li a{
+  text-decoration: none;
+  color:#fff;
+  padding: 10px 25px;
+  border: 1px solid #fff transparent;
+}
+ul li a:hover{
+      background-color: #fff;
+      color: #000;
+}
+ul li.active a{
+  background-color: #fff;
+      color: #000;
+} 
+.logo img{
+  float: left;
+  width: 150px;
+  height: auto;
+}
+.main{
+  max-width:1200px;
+  margin:auto;
+}
+.contact{
+
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(cnt.jfif);
+  height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.contact .content{
+  max-width: 800px;
+  text-align: center;
+}
+.contact.content h2{
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+}
+.contact.content p{
+  font-weight: 300;
+  color: #fff;
+}
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container .contactInfo
+{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container .contactInfo .box
+{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.container .contactInfo .box .text
+{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+.container .contactInfo .box .text h3
+{
+  font-weight: 500;
+  color: #00bcd4;
+}
+.contactForm
+{
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+.contactForm h2{
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.contactForm .inputBox
+{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+  width: 100%;
+  padding: 5px 0;
+  font: 16px;
+  margin: 10px 0;
+  border:none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contactForm .inputBox span
+{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+width: 100px;
+background: #00bcd4;
+color: #fff;
+border: none;
+cursor: pointer;
+padding: 10px;
+font-size: 18px;
+}
+</style>
+</head>
+<body style="background-color:rgb(255, 255, 255)">
+        <div class="main">
+            <div class="logo">
+                <img src="download.png">
+            </div>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Photo.html">Gallery</a></li>
+                <li><a href="Location.html">Location Map</a></li>
+                <li><a href="About.html">About</a></li>
+                <li  class="active"><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <section class="contact">
+        <div class="content">
+          <h1>Contact Us</h1>
+          <h3>How Can we Help?</h3>
+          <script>
+              console.log('Please feel free to message us using tthe following information');
+          </script>
+        </div>
+        <div class="container">
+          <div class="contactInfo">
+            <div class="box">
+              <div class="text">
+                <h3>Address</h3>
+                <p>123 Baguio Road, <br>Crystal Cave,<br> Baguio City</p>
+              </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <h3>Phone</h3>
+              <p>Smart <br>09395974636</p>
+            </div>
+        </div>
+        <div class="box">
+          <div class="text">
+            <h3>Email</h3>
+            <p>GMAIL<br>doniah@gmail.com<br>FACEBOOK<br>NiahDiz@facebook.com</p>
+          </div>
+      </div>
+          </div>
+          <div class="contactForm">
+            <form>
+              <h2>Send Message</h2>
+              <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span>Full Name</span>
+              </div>
+              <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span>Email</span>
+              </div>
+              <div class="inputBox">
+                <textarea required="required"></textarea>
+                <span>Type your Message....</span>
+              </div>
+              <div class="inputBox">
+                    <input type="submit" name="" value="Send">
+              </div>
+            </form>
+          </div>
+        </div>
+        </section>
+</body>
+</html>
